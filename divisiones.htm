@@ -32,30 +32,30 @@ Problemas de Divisi&#x00F3;n
 
 /* CSS variables for colours. */
 :root{
-	--strFontFace:       arial,helvetica,sans-serif;
+	--strFontFace:       Geneva,Arial,sans-serif;
 	--strFontSize:       medium;
 	--strTextColor:      #000000;
-	--strTitleColor:     #000000;
+	--strTitleColor:     #ffffff;
 
-	--strFuncLightColor: #eeeeee;
-	--strFuncShadeColor: #6e6e6e;
-	--strLinkColor:      #0000ff;
-	--strVLinkColor:     #ff00ff;
+	--strFuncLightColor: #ffffff;
+	--strFuncShadeColor: #7f7f7f;
+	--strLinkColor:      #0000FF;
+	--strVLinkColor:     #0000CC;
 	
-	--strNavBarColor:    #000000;
-	--strNavLightColor:  #7f7f7f;
-	--strNavShadeColor:  #000000;
+	--strNavBarColor:    #0080c0;
+	--strNavLightColor:  #7fbfdf;
+	--strNavShadeColor:  #004060;
 	--strNavTextColor:   #ffffff;
 	
-	--strPageBGColor:    #004080;
-	--strExBGColor:      #dddddd;
+	--strPageBGColor:    #0080ff;
+	--strExBGColor:      #ffffff;
 }
 
 body{
 	font-family: var(--strFontFace);
 	background-color: var(--strPageBGColor);
 	color: var(--strTextColor);
-	background-image: url(85172.jpg); 
+ 
 	margin-right: 5%;
 	margin-left: 5%;
 	font-size: var(--strFontSize);
@@ -970,7 +970,7 @@ var ShuffleQs = false;
 var ShuffleAs = false;
 var DefaultRight = '&#x00A1;Correcto!';
 var DefaultWrong = '&#x00A1;Lo siento! Intenta nuevamente.';
-var QsToShow = 8;
+var QsToShow = 10;
 var Score = 0;
 var Finished = false;
 var Qs = null;
@@ -1209,6 +1209,20 @@ I[7][3]=new Array();
 I[7][3][0]=new Array('144 km','',0,0,1);
 I[7][3][1]=new Array('148 km','',1,100,1);
 I[7][3][2]=new Array('138 km','',0,0,1);
+I[8]=new Array();I[8][0]=100;
+I[8][1]='';
+I[8][2]='0';
+I[8][3]=new Array();
+I[8][3][0]=new Array('325','',0,0,1);
+I[8][3][1]=new Array('314','',1,100,1);
+I[8][3][2]=new Array('352','',0,0,1);
+I[9]=new Array();I[9][0]=100;
+I[9][1]='';
+I[9][2]='0';
+I[9][3]=new Array();
+I[9][3][0]=new Array('4','',1,100,1);
+I[9][3][1]=new Array('5','',0,0,1);
+I[9][3][2]=new Array('3','',0,0,1);
 
 
 function StartUp(){
@@ -1594,7 +1608,7 @@ function CheckFinished(){
 
 
 
-<button class="NavButton" onclick="location='index.htm'; return false;">=&gt;</button>
+<button class="NavButton" onclick="location='divisiones.htm'; return false;">=&gt;</button>
 
 
 </div>
@@ -1646,7 +1660,9 @@ function CheckFinished(){
 <li class="QuizQuestion" id="Q_4" style="display: none;"><div class="QuestionText">En una fabrica las cajas chicas se empaquetan de a 8. Un cliente encarg&#x00F3; 6.504 cajas chicas. &#x00BF;Cu&#x00E1;ntos paquetes se deber&#x00E1;n armar?</div><ol class="MCAnswers"><li id="Q_4_0"><button class="FuncButton" id="Q_4_0_Btn" onclick="CheckMCAnswer(4,0,this)">?</button>&#160;&#160;913</li><li id="Q_4_1"><button class="FuncButton" id="Q_4_1_Btn" onclick="CheckMCAnswer(4,1,this)">?</button>&#160;&#160;823</li><li id="Q_4_2"><button class="FuncButton" id="Q_4_2_Btn" onclick="CheckMCAnswer(4,2,this)">?</button>&#160;&#160;813</li></ol></li>
 <li class="QuizQuestion" id="Q_5" style="display: none;"><div class="QuestionText">En una fabrica de cajas, para guardar las cajas chicas desarmadas, se deben empaquetar en grupos de 8. Si hay 2.048 cajas chicas, &#x00BF;cu&#x00E1;ntos paquetes se podr&#x00E1;n armar?</div><ol class="MCAnswers"><li id="Q_5_0"><button class="FuncButton" id="Q_5_0_Btn" onclick="CheckMCAnswer(5,0,this)">?</button>&#160;&#160;256</li><li id="Q_5_1"><button class="FuncButton" id="Q_5_1_Btn" onclick="CheckMCAnswer(5,1,this)">?</button>&#160;&#160;25</li><li id="Q_5_2"><button class="FuncButton" id="Q_5_2_Btn" onclick="CheckMCAnswer(5,2,this)">?</button>&#160;&#160;156</li></ol></li>
 <li class="QuizQuestion" id="Q_6" style="display: none;"><div class="QuestionText">En una divisi&#x00F3;n entera el divisor es 9, el cociente es 84 y el resto es 4. &#x00BF;Cu&#x00E1;l es el dividendo?</div><ol class="MCAnswers"><li id="Q_6_0"><button class="FuncButton" id="Q_6_0_Btn" onclick="CheckMCAnswer(6,0,this)">?</button>&#160;&#160;760</li><li id="Q_6_1"><button class="FuncButton" id="Q_6_1_Btn" onclick="CheckMCAnswer(6,1,this)">?</button>&#160;&#160;730</li><li id="Q_6_2"><button class="FuncButton" id="Q_6_2_Btn" onclick="CheckMCAnswer(6,2,this)">?</button>&#160;&#160;756</li></ol></li>
-<li class="QuizQuestion" id="Q_7" style="display: none;"><div class="QuestionText">Si un tren recorre 1184 kil&#x00F3;metros en 8 horas, &#x00BF;cu&#x00E1;ntos kil&#x00F3;metros ha recorrido ese tren en cada hora?</div><ol class="MCAnswers"><li id="Q_7_0"><button class="FuncButton" id="Q_7_0_Btn" onclick="CheckMCAnswer(7,0,this)">?</button>&#160;&#160;144 km</li><li id="Q_7_1"><button class="FuncButton" id="Q_7_1_Btn" onclick="CheckMCAnswer(7,1,this)">?</button>&#160;&#160;148 km</li><li id="Q_7_2"><button class="FuncButton" id="Q_7_2_Btn" onclick="CheckMCAnswer(7,2,this)">?</button>&#160;&#160;138 km</li></ol></li></ol>
+<li class="QuizQuestion" id="Q_7" style="display: none;"><div class="QuestionText">Si un tren recorre 1184 kil&#x00F3;metros en 8 horas, &#x00BF;cu&#x00E1;ntos kil&#x00F3;metros ha recorrido ese tren en cada hora?</div><ol class="MCAnswers"><li id="Q_7_0"><button class="FuncButton" id="Q_7_0_Btn" onclick="CheckMCAnswer(7,0,this)">?</button>&#160;&#160;144 km</li><li id="Q_7_1"><button class="FuncButton" id="Q_7_1_Btn" onclick="CheckMCAnswer(7,1,this)">?</button>&#160;&#160;148 km</li><li id="Q_7_2"><button class="FuncButton" id="Q_7_2_Btn" onclick="CheckMCAnswer(7,2,this)">?</button>&#160;&#160;138 km</li></ol></li>
+<li class="QuizQuestion" id="Q_8" style="display: none;"><div class="QuestionText">El d&#x00ED;a de ayer el cine de mi barrio recaud&#x00F3; 15700 pesos. Si el precio de la entrada es de 50. &#x00BF;Cu&#x00E1;ntos espectadores han concurrido al cine ayer?</div><ol class="MCAnswers"><li id="Q_8_0"><button class="FuncButton" id="Q_8_0_Btn" onclick="CheckMCAnswer(8,0,this)">?</button>&#160;&#160;325</li><li id="Q_8_1"><button class="FuncButton" id="Q_8_1_Btn" onclick="CheckMCAnswer(8,1,this)">?</button>&#160;&#160;314</li><li id="Q_8_2"><button class="FuncButton" id="Q_8_2_Btn" onclick="CheckMCAnswer(8,2,this)">?</button>&#160;&#160;352</li></ol></li>
+<li class="QuizQuestion" id="Q_9" style="display: none;"><div class="QuestionText">Se quieren colocar 234 autitos de colecci&#x00F3;n en cajas de 5. &#x00BF;Cu&#x00E1;ntos autitos sobran si no puede haber menos de 5 autitos por caja?</div><ol class="MCAnswers"><li id="Q_9_0"><button class="FuncButton" id="Q_9_0_Btn" onclick="CheckMCAnswer(9,0,this)">?</button>&#160;&#160;4</li><li id="Q_9_1"><button class="FuncButton" id="Q_9_1_Btn" onclick="CheckMCAnswer(9,1,this)">?</button>&#160;&#160;5</li><li id="Q_9_2"><button class="FuncButton" id="Q_9_2_Btn" onclick="CheckMCAnswer(9,2,this)">?</button>&#160;&#160;3</li></ol></li></ol>
 
 
 
@@ -1673,7 +1689,7 @@ function CheckFinished(){
 
 
 
-<button class="NavButton" onclick="location='index.htm'; return false;">=&gt;</button>
+<button class="NavButton" onclick="location='divisiones.htm'; return false;">=&gt;</button>
 
 
 </div>
